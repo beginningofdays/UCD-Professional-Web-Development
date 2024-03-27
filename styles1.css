@@ -1,0 +1,16 @@
+header{
+    text-align:center
+}
+
+p{      /* top | left and right | bottom */
+    margin: 0rem 0 1rem;
+        /* top | right | bottom | left */
+}
+
+p.title{
+    font-weight: bold;
+}
+
+dt{
+    font-weight: bold;
+}
