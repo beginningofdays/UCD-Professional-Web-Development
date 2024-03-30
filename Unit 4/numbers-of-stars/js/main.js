@@ -9,6 +9,11 @@ numberOfStars = prompt('Enter the number of stars?');
 for(let i=0; i < numberOfStars; i++){
     outputStars += '*';
 }
+      //not a number 
+while(isNaN(numberOfStars)||numberOfStars <= 0){
+    alert('Please enter a number greater than 0');
+    numberOfStars = prompt('Enter the number of stars?');
+}   //will allow the for loop to be reused. 
 
 //output
 alert("Outputting" + numberOfStars + " stars: " + outputStars); 
