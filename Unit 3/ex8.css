@@ -1,7 +1,17 @@
 *{
-    
+  background-color: white;  
+  color:#000099;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .news{
 
+}
+
+a{
+    background-color:#cccccc;
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
 }
