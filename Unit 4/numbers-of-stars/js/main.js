@@ -1,19 +1,17 @@
-//Declare variables
-let numberOfStars =0; 
-let outputStars = '';
-
-//inputs
-numberOfStars = prompt('Enter the number of stars?');
-
-//loop
-for(let i=0; i < numberOfStars; i++){
-    outputStars += '*';
+function drawConsolePyramid(height) {
+    // Loop for each row
+    for (let i = 0; i < height; i++) {
+        let row = '';
+        // Calculate number of spaces needed for centering
+        const spaces = ' '.repeat(height - i - 1);
+        // Calculate number of stars for this row
+        const stars = '*'.repeat(2 * i + 1);
+        // Combine spaces and stars and print
+        row = spaces + stars;
+        console.log(row);
+    }
 }
-      //not a number 
-while(isNaN(numberOfStars)||numberOfStars <= 0){
-    alert('Please enter a number greater than 0');
-    numberOfStars = prompt('Enter the number of stars?');
-}   //will allow the for loop to be reused. 
 
-//output
-alert("Outputting" + numberOfStars + " stars: " + outputStars); 
+// Test the function
+drawConsolePyramid(5);
+

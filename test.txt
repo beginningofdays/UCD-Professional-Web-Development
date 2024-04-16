@@ -1,1 +1,18 @@
-test
+let fahrenhiet = prompt("enter the temp in fahrenhiet");
+let fahNan = isNaN(fahrenhiet);
+console.log(fahNan);
+
+function fahrenhietToCelius(fahrenhiet){
+    let celsius = 5/9*(fahrenhiet -32);
+    return celsius;
+}
+
+let returnValue = fahrenhietToCelius(fahrenhiet); 
+
+**doesnt matter how many parameters are used, The function is returned the values from the return within the
+fucntion 
+
+//Output 
+console.log("the temp in celsius is: " +returnValue);
+
+ParseInt  -- Will take a string and try and convert to an integer. 
