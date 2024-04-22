@@ -4,24 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Historial Locations</title>
-
+    <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-
-    <style>
-        #map{
-            width:800px;
-            height:auto;
-            position:absolute; 
-            top:0; 
-            bottom:0;
-            left:0;
-            right:0; 
-            }
-    </style>
 </head>
 <body>
-<div id= "map">
+<div class="container">
+
+<header>
+
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+    </ul>
+</nav>
+
+<main>
+<div id="map">
 <script>
 const map = L.map('map').setView([53.38116, -6.59122],14); //set default load view & map zoom
 
@@ -54,7 +57,10 @@ L.marker([53.39252, -6.56184],{
     draggable:true,
     title: "Hover Text"
 }).addTo(map).bindPopup('<h3>Carton House</h3><p>Fairmont Managed</p><img src = "/images/test.jpg" width="150px">')
-  
-</script></div>
+</script>
+</div>
+</main>
+<footer> This is the footer</footer>
+</div>
 </body>
 </html>
