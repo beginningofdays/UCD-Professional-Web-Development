@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial Locations</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <style>
+        #map{
+            width:800px;
+            height:auto;
+            position:absolute; 
+            top:0; 
+            bottom:0;
+            left:0;
+            right:0; 
+            }
+    </style>
+</head>
+<body>
+<div id= "map">
+<script>
+const map = L.map('map').setView([53.38116, -6.59122],14); //set default load view & map zoom
+
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+//Maynooth Town
+L.marker([53.38116, -6.59122],{
+    draggable:true,
+    title: "Hover Text"
+}).addTo(map).bindPopup('<h3>Maynooth Town</h3><p>This is my Home</p><img src = "/images/test.jpg" width="150px">')
+//Maynooth Castle
+L.marker([53.38086, -6.59431],{
+    draggable:true,
+    title: "Hover Text"
+}).addTo(map).bindPopup('<h3>Maynooth Castle</h3><br><p>Historic 13th Century castle & grounds</p><img src = "/images/test.jpg" width="150px">')
+//Rodanstown Motte
+L.marker([53.41987, -6.62263],{
+    draggable:true,
+    title: "Hover Text"
+}).addTo(map).bindPopup('<h3>Rodanstown Motte</h3><p>Heritage Site</p><img src = "/images/test.jpg" width="150px">')
+//Connollys Folly
+L.marker([53.37040, -6.55557],{
+    draggable:true,
+    title: "Hover Text"
+}).addTo(map).bindPopup('<h3>Connollys Folly</h3><p>No Details yet</p><img src = "/images/test.jpg" width="150px">')
+//Carton House
+L.marker([53.39252, -6.56184],{
+    draggable:true,
+    title: "Hover Text"
+}).addTo(map).bindPopup('<h3>Carton House</h3><p>Fairmont Managed</p><img src = "/images/test.jpg" width="150px">')
+  
+</script></div>
+</body>
+</html>
