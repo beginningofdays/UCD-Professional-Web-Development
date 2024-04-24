@@ -1,3 +1,7 @@
+.{
+
+}
+
 .grid {
     display: grid;
     grid-template-columns:repeat(4, 1fr);
@@ -58,4 +62,25 @@ nav ul li a:hover {
       display: block; 
       width: 100%; 
       height: auto; 
+}
+
+main{
+    grid-row:4;
+    grid-column: 2 / 4; 
+}
+
+#map {
+    height: 450px; 
+    /*position:absolute; 
+    top:0; 
+    bottom:0;
+    left:0;
+    right:0; */
+}
+
+
+
+footer{
+    grid-row:5;
+    grid-column: 1 / 5; 
 }
