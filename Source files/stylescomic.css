@@ -1,0 +1,97 @@
+*{box-sizing: border-box;}
+body {
+ font-family: Arial, Helvetica, sans-serif;
+ margin: 0;
+  }
+
+.navbar {display: inline-block;
+background-color: blue;
+color: red;
+font-size: 25pt;
+width:100%;}
+
+.navbar ul {
+margin right: 30px;
+margin left: 30px;
+padding: 10px;
+}
+
+.navbar li {
+display: inline-block;
+font-size: 1.5rem;
+padding left:20px
+margin-right: 20px;}
+
+body {background-color: grey;}
+
+.container{
+ display:inline-block
+  height: 100vh;
+  align-items:center;
+  gap: 2em;
+  flex-grow: 1; 
+  padding: 0 40px
+  }
+
+.div1, .div2, .div3, .div4 { width: 21em;
+height:35em;
+background-color: blue;
+box-shadow: 5px 5px 25px #0000005f;
+padding: 10px; 
+border-radius: 10px;
+float: right;}
+
+
+.Villians{border-collapse: collapse;
+margin: 25px; 0;
+font-size:1em;
+min-width: 400px;}
+
+.Villians thead tr {
+background-color: green;
+color:black;
+text-align: left;
+font-weight:bold;
+}
+ 
+.Villians th, 
+.Villians td { 
+padding: 12px 15px;
+text-align: left;
+}
+
+.Villians tbody tr {
+  border-bottom: 1px solid #dddddd; }
+
+.Villians tr: :nth-child(odd) {
+background-color: #eeeeee;}
+
+  
+.movies{border-collapse: collapse;
+ margin: 25px; 0;
+ font-size:1em;
+min-width: 400px;}
+      
+.Movies thead tr {
+  background-color: green;
+  color:black;
+  text-align: left;
+  font-weight:bold;
+      }
+       
+.Movies th, 
+.Movies td { 
+padding: 12px 15px;
+text-align: left;
+      }
+      
+.Movies tbody tr {
+border-bottom: 1px solid #dddddd; }
+      
+.Movies tbody tr: nth-of-type(even) {
+ background-color: #f3f3f3;}
+
+footer {
+background-color: blue;
+text-align: center;
+color: #dddddd;}

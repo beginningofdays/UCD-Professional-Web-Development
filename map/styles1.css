@@ -51,11 +51,10 @@ nav ul li a {
 nav ul li a:hover {
     color: #555;
   }
-
   
 .banner {
       grid-row: 3; 
-      grid-column: 1 / 5; 
+      grid-column: 1 / 4; 
 }
   
 .banner img {
@@ -69,6 +68,11 @@ main{
     grid-column: 2 / 4; 
 }
 
+aside{
+   grid-row:4;
+   grid-column:4 / 6; 
+}
+
 #map {
     height: 450px; 
     /*position:absolute; 
@@ -78,9 +82,7 @@ main{
     right:0; */
 }
 
-
-
 footer{
     grid-row:5;
     grid-column: 1 / 5; 
-}
+} 
