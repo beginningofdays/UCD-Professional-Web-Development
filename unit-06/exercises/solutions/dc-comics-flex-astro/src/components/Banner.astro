@@ -1,0 +1,8 @@
+---
+// Access passed-in component props, like `<X title="Hello, World" />`
+const { imageURL } = Astro.props;
+
+---
+<section class="component banner">
+  <img class="banner" src={imageURL}>
+</section>
